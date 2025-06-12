@@ -8,6 +8,7 @@ A special thanks to everyone who helped improve Windows Maintenance Tool:
 - [@ahk057](https://github.com/ahk057) – Reported OneDrive Desktop path issue
 - [@BladeJoe](https://github.com/BladeJoe) – UAC elevation bug testing
 - [@Owned67](https://github.com/Owned67) – Syntax bug report and validation
+- [@thepcformula](https://github.com/thepcformula) - `choice10` Helped with a fix for "CHKDSK".
 
 ---
 
