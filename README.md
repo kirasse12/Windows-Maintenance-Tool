@@ -11,7 +11,8 @@ Designed for power users, sysadmins, and curious tinkerers – now smarter, safe
 
 ## 📸 Screenshot
 
-![8bd720f29d619c518a010b9ba5bc20d3](https://github.com/user-attachments/assets/8440e020-f679-4af5-8f8b-cb5c03dfa667)
+![dd2d6e060987d536b4f286b258105d4c](https://github.com/user-attachments/assets/7e3ad0a2-d736-42af-a4ae-d2a1092c4739)
+
 
 ---
 
