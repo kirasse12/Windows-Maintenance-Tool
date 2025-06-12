@@ -1,32 +1,37 @@
-
 # 🖥️ Windows Maintenance Tool
 
-![Version](https://img.shields.io/badge/version-v2.9.4-green)
+![Version](https://img.shields.io/badge/version-v2.9.5-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-A powerful, all-in-one Windows maintenance toolkit built entirely in Batch. Designed for power users, sysadmins, and curious tinkerers.
+A powerful, all-in-one Windows maintenance toolkit built entirely in Batch.  
+Designed for power users, sysadmins, and curious tinkerers – now smarter, safer, and fully offline-compatible.
 
 ---
 
 ## 📸 Screenshot
-![8bd720f29d619c518a010b9ba5bc20d3](https://github.com/user-attachments/assets/8440e020-f679-4af5-8f8b-cb5c03dfa667)
 
+![8bd720f29d619c518a010b9ba5bc20d3](https://github.com/user-attachments/assets/8440e020-f679-4af5-8f8b-cb5c03dfa667)
 
 ---
 
 ## ✅ Features
 
 - Run essential repair tools: `SFC`, `DISM`, `CHKDSK`
-- Windows Update Fix Utility (new in v2.9.4)
-- Auto-detect active network adapters
-- Configure DNS (Google, Cloudflare, or custom)
-- Clean temp files, Windows logs, and browser cache (optional)
-- Generate and save detailed reports:
+- Windows Update via `winget` (interactive selection added in v2.9.5)
+- View and upgrade individual packages instead of forced `--all`
+- Network diagnostics: `ipconfig`, `route print`, `nslookup`
+- DNS configuration (Google, Cloudflare, or custom)
+- Clean temp files, logs, and browser cache
+- Save detailed reports to Desktop:
   - System Info
-  - Network Configuration
+  - Network Info
   - Driver List
-- Easy-to-use menu interface with colorful output
+- Registry tools:
+  - Safe cleanup & backup
+  - Corruption scan
+- Fully menu-driven interface with clean output
+- No third-party dependencies required
 
 ---
 
@@ -36,45 +41,49 @@ A powerful, all-in-one Windows maintenance toolkit built entirely in Batch. Desi
 2. **Right-click → Run as Administrator** (auto-elevation supported).
 3. Follow the interactive menu.
 
-> ⚠️ Script output may appear in your system language (e.g. English, etc). This is normal.
+> ⚠️ Script output may appear in your system language (e.g. English, Danish, etc). This is normal.
 
 ---
 
-## 📝 Output Files
+## 📁 Output Files
 
-Saved to your Desktop for easy access:
+Saved directly to your Desktop:
 
 - `System_Info_YYYY-MM-DD.txt`
 - `Network_Info_YYYY-MM-DD.txt`
 - `Driver_List_YYYY-MM-DD.txt`
+- `routing_table_YYYY-MM-DD.txt` *(new in v2.9.5)*
 
 ---
 
 ## 🧪 Troubleshooting & FAQ
 
 **Q: The script didn’t restart as Admin?**  
-A: Make sure UAC is enabled. Right-click the file and select **Run as Administrator**.
+A: Make sure UAC is enabled. Right-click and select **Run as Administrator**.
 
-**Q: Windows messages show in Danish/German/etc.?**  
-A: The script uses native Windows tools. Output language follows your OS install language.
+**Q: Why does it crash when selecting winget upgrades?**  
+A: Fixed in v2.9.5 – now fully input-validated and error-handled.
 
-**Q: Browser cache clear crashes?**  
-A: This feature is in beta. Report issues with your browser and OS version.
+**Q: Why was Registry Defrag removed?**  
+A: The feature depended on a third-party tool (NTREGOPT) which is no longer accessible.  
+The script is now fully offline and native to Windows.
 
 ---
 
-## ✍️ Changelog (v2.9.4)
+## ✍️ Changelog (v2.9.5)
 
-- ➕ Added `choice23`: Reset Windows Update Services tool
-- 🚀 Services included: `wuauserv`, `cryptsvc`, `appidsvc`, `bits`
-- ♻️ Utility returns to main menu on completion
-- 🧼 Small text polish, output clarity improvements
+- 🆕 Added interactive Winget upgrade selection (`choice1`)
+- 🛡 Improved stability and input validation
+- ❌ Removed external registry defrag tool (NTREGOPT)
+- 🧠 Help text and prompt readability improvements
+- 🧼 Replaced special characters with CMD-safe ASCII
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests, issues, and feedback are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Pull requests, issues, and feedback are welcome!  
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
