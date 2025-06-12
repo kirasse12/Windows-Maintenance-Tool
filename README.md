@@ -1,6 +1,6 @@
 # 🖥️ Windows Maintenance Tool
 
-![Version](https://img.shields.io/badge/version-v2.9.5-green)
+![Version](https://img.shields.io/badge/version-v2.9.6-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
@@ -71,13 +71,13 @@ The script is now fully offline and native to Windows.
 
 ---
 
-## ✍️ Changelog (v2.9.5)
+## ✍️ Changelog (v2.9.6)
 
-- 🆕 Added interactive Winget upgrade selection (`choice1`)
-- 🛡 Improved stability and input validation
-- ❌ Removed external registry defrag tool (NTREGOPT)
-- 🧠 Help text and prompt readability improvements
-- 🧼 Replaced special characters with CMD-safe ASCII
+- 🛠 Fixed crash in `choice10` (CHKDSK scan)
+- 🔍 CHKDSK now targets only valid file system drives using PowerShell
+- ✅ Improved drive filtering for better compatibility on systems with external or locked volumes
+- 🧪 Rewrote scanning logic to support multi-partition setups
+- 🧼 Cleaned up CMD prompt formatting (replaced smart quotes, ensured ASCII-safe output)
 
 ---
 
